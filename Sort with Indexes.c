@@ -33,13 +33,13 @@ int main(void) {
   printf("\n");
    for( i=0; i<a; i++)
   {
-   // printf("%d ", i+1);       //in ra array sau khi soft
-    if(check[i]==array1[i]) check[i]=sothutu[i];
-    printf("%d ", check[i]);
     int j=0;
-    while(check[i]!=array1[j]) {
-      j++;}
-      printf("%d ", check[i]);
+    while(array1[i]!=check[j])      //so sanh voi nhau, neu nhu ma khong bang nhau thi nang j len 1
+    {
+      j++;
+    }
+    printf("%d ", j+1);
+    j=0;
   }
  
   return 0;
