@@ -7,7 +7,7 @@ int main(void) {
 
   for(int i=0; i<vao; i++)      
   {
-    scanf("%f %f", &a[i], &b[i]);
+    scanf("%f %f", &a[i], &b[i]);           //phai doi het sang rad tai may tu tinh sang rad
    // printf("\n");
    b[i]/=57.3;
    c[i]=b[i]-1.57;
