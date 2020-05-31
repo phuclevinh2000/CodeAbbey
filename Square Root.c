@@ -1,30 +1,25 @@
-#include <stdio.h>    //chua xong
-
-int main(void) {
-  int a ;
-  float out[100];
-  int trai[100], phai[100];
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+  int a;
+  double x[100], n[100], r;
   scanf("%d", &a);
-  for(int i=0; i <a; i++)
-  {
-    scanf("%d %d", &trai[i], &phai[i]);
-  }
-  int count=0;
   for(int i=0; i<a; i++)
   {
-    float r=1;
-    if(phai[i]==0) printf("1 ");
-    else {
-      do
-      {
-      out[i]=(r+trai[i]/r)/2;
-      r=out[i];
-      count++;    
-      }
-    while(count<phai[i]);
-    printf("%.9f ", out[i]);
-    }
+    scanf("%lf %lf", &x[i], &n[i]);
   }
-  
-  return 0;
+  for(int i=0; i<a; i++)
+  {
+   // if(n[i]==0) printf("1 ");
+    r=1;
+    int step=0;
+    while(step<n[i])           //chia theo de bai
+    {
+      r=(r+x[i]/r)/2;
+      step++;
+    }
+    printf("%.9lf ", r);        //no bat 9 ki tu
+  }
 }
