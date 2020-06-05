@@ -27,13 +27,13 @@ int main(void) {
     {
         isPrime = true;
 
-        for (i = 1; isPrime && p / primes[i] >= primes[i]; ++i)
+        for (i = 1; isPrime && p / primes[i] >= primes[i]; ++i)       //check neu nhu ko phai la so prime
             if (p % primes[i] == 0)
                 isPrime = false;
 
         if (isPrime == true)
         {
-            primes[primeIndex] = p;
+            primes[primeIndex] = p;                                    //neu nhu la so prime
             ++primeIndex;
         }
     }
