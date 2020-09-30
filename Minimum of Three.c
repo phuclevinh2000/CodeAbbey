@@ -19,6 +19,6 @@ int main()
        else output[i]=day[i];
     }
       
-    for(int i=0; i<a; i++) printf("%d ", output[i]);
+    for(int i=0; i<a; i++) printf("Minimum of three number is %d ", output[i]);
     return 0;
 }
